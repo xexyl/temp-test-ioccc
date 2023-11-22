@@ -2230,7 +2230,10 @@ to including the [IOCCC website](https://www.ioccc.org) itself.
 ### Source code: [2005/sykes/sykes.c](2005/sykes/sykes.c)
 ### Information: [2005/sykes/README.md](2005/sykes/README.md)
 
-The author stated the below points of interest.
+You have to hit ctrl-c or whatever your interrupt is set to in order to kill the
+program.
+
+The author stated the below points of interest as well.
 
 The machine emulated is an older 40 column one so 80 column programs will not
 show up correctly.
