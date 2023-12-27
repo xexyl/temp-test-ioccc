@@ -99,3 +99,8 @@ the rest of the entries are done, assuming that it's possible.
 - Although I will have to do this when another issue is opened up I am aware of
 some issues in 2020/ferguson1/.winner.json. I do not want to forget this,
 however, so I am noting it here.
+
+- Verify consistency with try/try.alt scripts (how the commands are
+displayed/interactivity etc.) and verify if any entries that do not have them
+(most likely earlier years) that could benefit from them actually have them. One
+entry is pending discussion.
