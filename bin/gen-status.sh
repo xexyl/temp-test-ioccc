@@ -53,6 +53,7 @@ export VERSION="1.1 2024-03-10"
 NAME=$(basename "$0")
 export NAME
 export V_FLAG=0
+LS_TOOL=$(type -P ls)
 GIT_TOOL=$(type -P git)
 export GIT_TOOL
 if [[ -z "$GIT_TOOL" ]]; then
