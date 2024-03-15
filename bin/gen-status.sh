@@ -89,8 +89,8 @@ declare -ag TOOL_OPTION
 
 # usage
 #
-export USAGE="usage: $0 [-h] [-v level] [-V] [-d topdir] [-n] [-N]
-			[-t tagline] [-T md2html.sh] [-u repo_url]
+export USAGE="usage: $0 [-h] [-v level] [-V] [-d topdir] [-D docroot] [-n] [-N]
+			[-t tagline] [-T md2html.sh] [-u repo_url] [-w site_url] [-l ls]
 			[p | pending | o | open | j | judging | c | closed]
 
 	-h		print help message and exit
@@ -115,6 +115,8 @@ export USAGE="usage: $0 [-h] [-v level] [-V] [-d topdir] [-n] [-N]
 			NOTE: The '-u repo_url' is passed as leading options on tool command lines.
 	-w site_url	Base URL of the web site (def: $SITE_URL)
 			NOTE: The '-w site_url' is passed as leading options on tool command lines.
+
+	-l ls		Path to ls(1) tool
 
 	[p | pending]	Set the contest_status to pending
 	[o | open]	Set the contest_status to open
@@ -166,7 +168,7 @@ function output_mod_date
 
     # obtain ls output
     #
-    LS_OUTPUT=$(TZ=UTC ls -D '%FT%T+00:00' -ld "$FILENAME" 2>/dev/null)
+    LS_OUTPUT=$(TZ=UTC "$LS_TOOL" -D '%FT%T+00:00' -ld "$FILENAME" 2>/dev/null)
     status="$?"
     if [[ $status -ne 0 ]]; then
 	echo "$0: ERROR: in output_mod_date: TZ=UTC ls -D '%FT%T+00:00' -ld $FILENAME failed, error: $status" 1>&2
@@ -212,6 +214,13 @@ function output_status_json
     if [[ -z $IOCCC_STATUS ]]; then
 	echo "$0: ERROR: in output_status_json: contest_status arg is empty" 1>&2
 	return 2
+    fi
+    if [[ "$IOCCC_STATUS" != "p" && "$IOCCC_STATUS" != "pending" && "$IOCCC_STATUS" != "o" &&
+	"$IOCCC_STATUS" != "open" && "$IOCCC_STATUS" != "j" && "$IOCCC_STATUS" != "judging" &&
+	"$IOCCC_STATUS" != "c" && "$IOCCC_STATUS" != "closed" ]]; then
+	    echo "$0: ERROR: in output_status_json: contest_status value invalid." 1>&2
+	    echo "Valid values are one of: p, pending, o, open, j, judging, c or closed" 1>&2
+	    return 2
     fi
     NEWS_PATH="$2"
     if [[ ! -e $NEWS_PATH ]]; then
@@ -280,7 +289,7 @@ function output_status_json
 
 # parse command line
 #
-while getopts :hv:Vd:D:nNt:T:u:w: flag; do
+while getopts :hv:Vd:D:nNt:T:u:w:l: flag; do
   case "$flag" in
     h) echo "$USAGE" 1>&2
 	exit 2
@@ -340,6 +349,8 @@ while getopts :hv:Vd:D:nNt:T:u:w: flag; do
     w) SITE_URL="$OPTARG"
 	TOOL_OPTION+=("-w")
 	TOOL_OPTION+=("$SITE_URL")
+	;;
+    l)	LS_TOOL="$OPTARG"
 	;;
     \?) echo "$0: ERROR: invalid option: -$OPTARG" 1>&2
 	echo 1>&2
