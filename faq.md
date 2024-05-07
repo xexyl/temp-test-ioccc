@@ -2570,7 +2570,7 @@ and ask for help.  See [FAQ 5.3](#fix_an_entry) for information on opening up an
 </div>
 </div>
 
-#### PLEASE HELP us identify proper locations for IOCCC authors
+#### PLEASE HELP us identify proper locations for IOCCC authors (NON-ANONYMOUS ONLY)
 
 If you know the location of an author listed under:
 
@@ -2593,10 +2593,13 @@ The contents of these JSON files contain the best known information
 about authors of IOCCC entries.  See [FAQ 6.6](#author_json) for information
 about the contents of these JSON file and how they are used.
 
-You may update IOCCC author information in a `author_handle.json` file
-by [submitting  a pull request](faq.html#pull_request)
-against the master [branch](https://github.com/ioccc-src/winner/branches)
-of the [ioccc-src/winner repo](https://github.com/ioccc-src/winner).
+Assuming that it's not an anonymous author, you may update IOCCC author
+information in an `author_handle.json` file by [submitting  a pull
+request](faq.html#pull_request) against the master
+[branch](https://github.com/ioccc-src/winner/branches) of the [ioccc-src/winner
+repo](https://github.com/ioccc-src/winner). If it's an anonymous author it's
+best that you leave it to the judges as only the judges know what the authors
+want.
 
 Please see [FAQ 5.2 How may I submit a fix to an IOCCC entry](#fix_an_entry).
 
