@@ -243,7 +243,7 @@ in a **really unique AND interesting way** to even make it into the
 final judging rounds.  It will have to compete with previous IOCCC
 winners based on the same theme.
 
-**IMPORTANT HINT**: If you really wish send in an submission on a
+**IMPORTANT HINT**: If you really wish send in a submission on a
 frequently submitted theme, be sure that it is obfuscated in several
 new and novel ways.
 
@@ -257,7 +257,7 @@ of the same theme.
 #### Examples of frequently submitted themes
 
 
-##### maze generator
+##### Maze generator
 
 - [1985/shapiro](1985/shapiro/index.html)
 - [1991/buzzard](1991/buzzard/index.html)
@@ -266,20 +266,20 @@ of the same theme.
 - [1998/bas1](1998/bas1/index.html)
 
 
-##### tic-tac-toe/noughts and crosses/Xs and Os game
+##### Tic-Tac-Toe/Noughts and Crosses/Xs and Os game
 
 - [1991/westley](1991/westley/index.html)
 - [1996/jonth](1996/jonth/index.html)
 - [2020/carlini](2020/carlini/index.html)
 
 
-##### solitaire/Othello game
+##### sSlitaire/Othello game
 
 - [1987/lievaart](1987/lievaart/index.html)
 - [1994/dodsond1](1994/dodsond1/index.html)
 
 
-##### generating small primes (below is the list of all prime related winning entries)
+##### Generating small primes (below is the list of all prime related winning entries)
 
 - [1985/august](1985/august/index.html)
 - [1988/applin](1988/applin/index.html)
@@ -289,14 +289,14 @@ of the same theme.
 - [2000/bellard](2000/bellard/index.html)
 
 
-##### self reproducing program
+##### Self-reproducing program
 
 - [1990/scjones](1990/scjones/index.html)
 - [1994/smr](1994/smr/index.html) - _do not claim your program is the smallest without seeing this entry_!
 - [2000/dhyang](2000/dhyang/index.html) - _this entry set a high bar for entries of this theme_
 
 
-##### entries that just print "Hello, world!"
+##### Entries that just print "Hello, world!"
 
 - [1984/anonymous](1984/anonymous/index.html)
 - [1985/applin](1985/applin/index.html)
@@ -307,7 +307,7 @@ of the same theme.
 - [2000/tomx](2000/tomx/index.html)
 
 
-##### entries that use some complex state machine/table to print something
+##### Entries that use some complex state machine/table to print something
 
 - [1988/isaak](1988/isaak/index.html)
 - [1988/phillipps](1988/phillipps/index.html)
@@ -315,7 +315,7 @@ of the same theme.
 - [2018/giles](2018/giles/index.html)
 
 
-##### rot13
+##### ROT13
 
 - [1985/sicherman](1985/sicherman/index.html)
 - [1989/westley](1989/westley/index.html)
