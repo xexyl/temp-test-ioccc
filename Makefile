@@ -456,7 +456,7 @@ guidelines: ${GEN_TOP_HTML} next/guidelines.md
 
 faq: ${GEN_TOP_HTML} faq.md
 	@echo "Wait, you have questions? Uh oh!"
-	@${GEN_TOP_HTML} next/guidelines
+	@${GEN_TOP_HTML} faq
 	@echo "Well, okay then!"
 
 # build entry HTML files from markdown other than README.md to index.html

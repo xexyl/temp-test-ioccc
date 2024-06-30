@@ -356,7 +356,9 @@ of the same theme.
 
 
 <div id="faq0_2">
+<div id="submission_makefile">
 ### FAQ 0.2: What should I put in my entry's Makefile?
+</div>
 </div>
 
 We recommend starting with the [sample

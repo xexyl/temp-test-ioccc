@@ -436,7 +436,7 @@ the following files:
 **`|`**   The `Makefile` must be a non-empty file in [GNU
 Makefile](https://www.gnu.org/software/make/manual/make.html) form. See the
 [Makefile.example](https://github.com/ioccc-src/mkiocccentry/blob/master/Makefile.example),
-the [FAQ about your submission's Makefile](../faq.html#submission_makefiles) and
+the [FAQ about your submission's Makefile](../faq.html#submission_makefile) and
 the [FAQ about IOCCC Makefile compatibility](../faq.html#make_compatibility) for help.
 
 **`|`**   The `remarks.md` must be a non-empty file in markdown form.  See also
